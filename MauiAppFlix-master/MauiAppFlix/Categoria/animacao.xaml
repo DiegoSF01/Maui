@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categoria.animacao"
+             Title="animacao"
+             BackgroundColor="Black">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilme">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*,*"
+                  Padding="5"
+                  RowSpacing="2"
+                  ColumnSpacing="2">
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" x:Name="btnrobos"
+                             Style="{StaticResource btnfilme}" Source="robos.jpg"
+                             Clicked="btnrobos_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" x:Name="btnrio"
+                             Style="{StaticResource btnfilme}" Source="rio.jpg"
+                             Clicked="btnrio_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" x:Name="btntoy_story"
+                             Style="{StaticResource btnfilme}" Source="toy_story.jpg"
+                             Clicked="btntoy_story_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" x:Name="btnnem_que_a_vaca_tussa"
+                             Style="{StaticResource btnfilme}" Source="nem_que_a_vaca_tussa.jpg"
+                             Clicked="btnnem_que_a_vaca_tussa_Clicked"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

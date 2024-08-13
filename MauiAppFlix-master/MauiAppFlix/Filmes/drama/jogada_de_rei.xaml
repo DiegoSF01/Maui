@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Filmes.drama.jogada_de_rei"
+             Title="jogada_de_rei"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                 Source="https://www.youtube.com/embed/dnBpZuSUISQ" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+                       Source=".jpg" Aspect="AspectFit" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                             Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento"
+                           Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label Text="8 de maio de 2014"
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" 
+                           Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label Text="Jake Goldberger" 
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1"
+                             Grid.ColumnSpan="2">
+
+                    <Label Text="Sinopse" 
+                           FontSize="Medium" Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label x:Name="sinopse" Text="Eugene Brown passou 18 anos na prisão. De volta à liberdade, ele utiliza seus novos conhecimentos para fundar um clube de xadrez com adolescentes carentes e rebeldes em Washington. Com Eugene, os jovens começarão a sonhar com um futuro melhor."
+                           FontSize="Micro" Padding="5" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

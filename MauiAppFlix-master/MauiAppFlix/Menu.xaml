@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Menu"
+             BackgroundImageSource="mauinetflix.png"
+             Title="Menu">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="btncommon" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="CornerRadius" Value="1"/>
+                <Setter Property="BorderColor" Value="#99022a"/>
+                <Setter Property="BorderWidth" Value="1"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid ColumnDefinitions="*,*"
+              RowDefinitions="*,*,*,*,*,*"
+              RowSpacing="1" ColumnSpacing="1">
+                <Button Grid.Row="0" Grid.Column="0" 
+                        Style="{StaticResource btncommon}"
+                        x:Name="acao" Text="Ação" Clicked="acao_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1"
+                        Style="{StaticResource btncommon}"
+                        x:Name="animacao" Text="Animação" Clicked="animacao_Clicked"/>
+                <Button Grid.Row="1" Grid.Column="0"
+                        Style="{StaticResource btncommon}"
+                        x:Name="aventura" Text="Aventura" Clicked="aventura_Clicked"/>
+                <Button Grid.Row="1" Grid.Column="1"
+                        Style="{StaticResource btncommon}"
+                        x:Name="comedia" Text="Comédia" Clicked="comedia_Clicked"/>
+                <Button Grid.Row="2" Grid.Column="0"
+                        Style="{StaticResource btncommon}"
+                        x:Name="documentario" Text="Documentário" Clicked="documentario_Clicked"/>
+                <Button Grid.Row="2" Grid.Column="1"
+                        Style="{StaticResource btncommon}"
+                        x:Name="drama" Text="Drama" Clicked="drama_Clicked"/>
+                <Button Grid.Row="3" Grid.Column="0"
+                        Style="{StaticResource btncommon}"
+                        x:Name="ficcao" Text="Ficção" Clicked="ficcao_Clicked"/>
+                <Button Grid.Row="3" Grid.Column="1"
+                        Style="{StaticResource btncommon}"
+                        x:Name="guerra" Text="Guerra" Clicked="guerra_Clicked"/>
+                <Button Grid.Row="4" Grid.Column="0"
+                        Style="{StaticResource btncommon}"
+                        x:Name="infantil" Text="Infantil" Clicked="infantil_Clicked"/>
+                <Button Grid.Row="4" Grid.Column="1"
+                        Style="{StaticResource btncommon}"
+                        x:Name="nacional" Text="Nacional" Clicked="nacional_Clicked"/>
+                <Button Grid.Row="5" Grid.Column="0"
+                        Style="{StaticResource btncommon}"
+                        x:Name="romance" Text="Romance" Clicked="romance_Clicked"/>
+                <Button Grid.Row="5" Grid.Column="1"
+                        Style="{StaticResource btncommon}"
+                        x:Name="suspense" Text="Suspense" Clicked="suspense_Clicked"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

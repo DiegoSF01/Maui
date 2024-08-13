@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categoria.comedia"
+             Title="comedia"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilme">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*,*"
+                  Padding="5"
+                  RowSpacing="2"
+                  ColumnSpacing="2">
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" x:Name="btnas_branquelas"
+                             Style="{StaticResource btnfilme}" Source="as_branquelas.jpg"
+                             Clicked="btnas_branquelas_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" x:Name="btngente_grande"
+                             Style="{StaticResource btnfilme}" Source="gente_grande.jpg"
+                             Clicked="btngente_grande_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" x:Name="btnclick"
+                             Style="{StaticResource btnfilme}" Source="click.jpg"
+                             Clicked="btnclick_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" x:Name="btntodo_mundo_em_panico"
+                             Style="{StaticResource btnfilme}" Source="todo_mundo_em_panico.jpg"
+                             Clicked="btntodo_mundo_em_panico_Clicked"/>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categoria.drama"
+             Title="drama"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilme">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*,*"
+                  Padding="5"
+                  RowSpacing="2"
+                  ColumnSpacing="2">
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" x:Name="btnextraordinario"
+                             Style="{StaticResource btnfilme}" Source="extraordinario.jpg"
+                             Clicked="btnextraordinario_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" x:Name="btnjogada_de_rei"
+                             Style="{StaticResource btnfilme}" Source="jogada_de_rei.jpg"
+                             Clicked="btnjogada_de_rei_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" x:Name="btno_menino_que_descobriu_o_vento"
+                             Style="{StaticResource btnfilme}" Source="o_menino_que_descobriu_o_vento.jpg"
+                             Clicked="btno_menino_que_descobriu_o_vento_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" x:Name="btnmaos_talentosas"
+                             Style="{StaticResource btnfilme}" Source="maos_talentosas.jpg"
+                             Clicked="btnmaos_talentosas_Clicked"/>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

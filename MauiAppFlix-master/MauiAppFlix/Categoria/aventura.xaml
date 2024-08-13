@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categoria.aventura"
+             Title="aventura"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilme">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*,*"
+                  Padding="5"
+                  RowSpacing="2"
+                  ColumnSpacing="2">
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" x:Name="btnharry_potter"
+                             Style="{StaticResource btnfilme}" Source="harry_potter.jpg"
+                             Clicked="btnharry_potter_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" x:Name="kung_fu_panda"
+                             Style="{StaticResource btnfilme}" Source="kung_fu_panda.jpg"
+                             Clicked="kung_fu_panda_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" x:Name="btngato_de_botas_2"
+                             Style="{StaticResource btnfilme}" Source="gato_de_botas_2.jpg"
+                             Clicked="btngato_de_botas_2_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" x:Name="btncarros"
+                             Style="{StaticResource btnfilme}" Source="carros.jpg"
+                             Clicked="btncarros_Clicked"/>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

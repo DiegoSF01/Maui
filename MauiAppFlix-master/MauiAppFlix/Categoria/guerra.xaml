@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categoria.guerra"
+             Title="guerra"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilme">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*,*"
+                  Padding="5"
+                  RowSpacing="2"
+                  ColumnSpacing="2">
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" x:Name="btnate_o_ultimo_homem"
+                             Style="{StaticResource btnfilme}" Source="ate_o_ultimo_homem.jpg"
+                             Clicked="btnate_o_ultimo_homem_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" x:Name="btnesparta"
+                             Style="{StaticResource btnfilme}" Source="esparta.jpg"
+                             Clicked="btnesparta_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" x:Name="btnsniper_americano"
+                             Style="{StaticResource btnfilme}" Source="sniper_americano.jpg"
+                             Clicked="btnsniper_americano_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" x:Name="btnrambo_3"
+                             Style="{StaticResource btnfilme}" Source="rambo_3.jpg"
+                             Clicked="btnrambo_3_Clicked"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

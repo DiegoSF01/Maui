@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Filmes.animacao.toy_story"
+             Title="toy_story"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                 Source="https://www.youtube.com/embed/dnBpZuSUISQ" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+                       Source="toy_story.jpg" Aspect="AspectFit" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                             Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento"
+                           Style="{StaticResource titulo}" TextColor="White"/>
+
+                    <Label Text="22 de dezembro de 1995"
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" 
+                           Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label Text="John Lasseter" 
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1" 
+                             Grid.ColumnSpan="2">
+
+                    <Label Text="Sinopse" 
+                           FontSize="Medium" Style="{StaticResource titulo}" TextColor="White"/>
+
+                    <Label x:Name="sinopse" Text="O aniversário do garoto Andy está chegando e seus brinquedos ficam nervosos, temendo que ele ganhe novos brinquedos que possam substituí-los. Liderados pelo caubói Woody, o brinquedo predileto de Andy, eles recebem Buzz Lightyear, o boneco de um patrulheiro espacial, que logo passa a receber mais atenção do garoto. Com ciúmes, Woody tenta ensiná-lo uma lição, mas Buzz cai pela janela. É o início da aventura do caubói, que precisa resgatar Buzz para limpar sua barra com os outros brinquedos."
+                           FontSize="Micro" Padding="5" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

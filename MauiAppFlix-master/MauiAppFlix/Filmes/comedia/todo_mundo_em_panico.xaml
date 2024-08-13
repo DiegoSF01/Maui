@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Filmes.comedia.todo_mundo_em_panico"
+             Title="todo_mundo_em_panico"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                 Source="https://www.youtube.com/embed/dnBpZuSUISQ" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+                       Source="todo_mundo_em_panico.jpg" Aspect="AspectFit" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                             Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento"
+                           Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label Text="22 de setembro de 2000"
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" 
+                           Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label Text="Keenen Ivory Wayans" 
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1"
+                             Grid.ColumnSpan="2">
+
+                    <Label Text="Sinopse" 
+                           FontSize="Medium" Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label x:Name="sinopse" Text="Depois do assassinato de uma bela colega de classe, um grupo de adolescentes desorientados descobre que há um assassino entre eles. A heroína Cindy Campbell e a sua turma de amigos tentam se proteger do perigo, mas Gail Hailstorm, uma repórter irritante, simplesmente não os deixa em paz."
+                           FontSize="Micro" Padding="5" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>

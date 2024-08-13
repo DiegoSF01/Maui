@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Categoria.documentario"
+             Title="documentario"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilme">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="300, 300, 300"
+                  ColumnDefinitions="*,*"
+                  Padding="5"
+                  RowSpacing="2"
+                  ColumnSpacing="2">
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="0" x:Name="btncomo_ser_warren_buffet"
+                             Style="{StaticResource btnfilme}" Source="como_ser_warren_buffett.jpg"
+                             Clicked="btncomo_ser_warren_buffet_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="0" x:Name="btnisabella"
+                             Style="{StaticResource btnfilme}" Source="isabella.jpg"
+                             Clicked="btnisabella_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="0" Grid.Column="1" x:Name="btnsenna"
+                             Style="{StaticResource btnfilme}" Source="senna.jpg"
+                             Clicked="btnsenna_Clicked"/>
+
+                <ImageButton Aspect="AspectFill" Grid.Row="1" Grid.Column="1" x:Name="btnsteve_jobs"
+                             Style="{StaticResource btnfilme}" Source="steve_jobs.jpg"
+                             Clicked="btnsteve_jobs_Clicked"/>
+                
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

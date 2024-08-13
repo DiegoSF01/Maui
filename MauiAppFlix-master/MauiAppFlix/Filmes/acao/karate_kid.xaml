@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppFlix.Filmes.acao.karate_kid"
+             Title="karate_kid"
+             BackgroundColor="Black">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*">
+        <WebView Grid.Column="0" Grid.Row="0" 
+                 Source="https://www.youtube.com/embed/dnBpZuSUISQ" />
+
+        <ScrollView Grid.Row="1" Grid.Column="0">
+            <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+                <Image Grid.Column="0" Grid.Row="0" 
+                       Source="karate_kid.jpg" Aspect="AspectFit" HeightRequest="300" />
+                <StackLayout VerticalOptions="CenterAndExpand" 
+                             Grid.Column="1" Grid.Row="0">
+                    <Label Text="Data de Lançamento"
+                           Style="{StaticResource titulo}" TextColor="White"/>
+
+                    <Label Text="28 de setembro de 1984"
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+
+                    <Label Text="Direção" Margin="0, 20, 0, 0" 
+                           Style="{StaticResource titulo}" TextColor="White"/>
+                    <Label Text="John G. Avildsen" 
+                           Style="{StaticResource textoTitulo}" TextColor="White"/>
+                </StackLayout>
+                <StackLayout Grid.Column="0" Grid.Row="1" 
+                             Grid.ColumnSpan="2">
+
+                    <Label Text="Sinopse" 
+                           FontSize="Medium" Style="{StaticResource titulo}" TextColor="White"/>
+
+                    <Label x:Name="sinopse" Text="O adolescente Daniel LaRusso se envolve com a ex-namorada do valentão da escola e começa a ser atormentado por sua gangue. Para sua sorte, ele conta com os ensinamentos do senhor Miyagi, um mestre de karatê que o prepara para autodefesa e também para um importante campeonato."
+                           FontSize="Micro" Padding="5" TextColor="White"/>
+
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
