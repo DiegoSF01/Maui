@@ -5,7 +5,7 @@ namespace MauiAppShowdoMilhao
     public partial class App : Application
     {
 
-        List<Pergunta> Perguntas_faceis = new()
+        static List<Pergunta> Perguntas_faceis = new()
         {
             new Pergunta
             {
@@ -249,7 +249,7 @@ namespace MauiAppShowdoMilhao
             },
         };
 
-        List<Pergunta> Perguntas_medias = new()
+        static List<Pergunta> Perguntas_medias = new()
         {
             new Pergunta
             {
@@ -493,7 +493,7 @@ namespace MauiAppShowdoMilhao
             }
         };
 
-        List<Pergunta> Perguntas_dificeis = new()
+        static List<Pergunta> Perguntas_dificeis = new()
         {
             new Pergunta
             {
@@ -738,6 +738,285 @@ namespace MauiAppShowdoMilhao
 
         };
 
+        static List<Pergunta> Perguntas_finais = new()
+        {
+            new Pergunta
+            {
+                Id = 61,
+                Enunciado = "Qual é o princípio por trás do funcionamento de um reator nuclear?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "FISSÃO NUCLEAR"},
+                    new Alternativa {Correta = false, Descricao = "FUSÃO NUCLEAR"},
+                    new Alternativa {Correta = false, Descricao = "RADIAÇÃO GAMA"},
+                    new Alternativa {Correta = false, Descricao = "DECAIMENTO RADIOATIVO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 62,
+                Enunciado = "Quem foi o primeiro matemático a formalizar o conceito de 'conjunto infinito'?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "GEORG CANTOR"},
+                    new Alternativa {Correta = false, Descricao = "ISAAC NEWTON"},
+                    new Alternativa {Correta = false, Descricao = "CARL FRIEDRICH GAUSS"},
+                    new Alternativa {Correta = false, Descricao = "LEONHARD EULER"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 63,
+                Enunciado = "Qual é o nome da técnica de pintura que utiliza pigmentos diluídos em água?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "AQUARELA"},
+                    new Alternativa {Correta = false, Descricao = "GUACHE"},
+                    new Alternativa {Correta = false, Descricao = "TÊMPERA"},
+                    new Alternativa {Correta = false, Descricao = "ÓLEO SOBRE TELA"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 64,
+                Enunciado = "Qual é o metal mais abundante na crosta terrestre?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "ALUMÍNIO"},
+                    new Alternativa {Correta = false, Descricao = "FERRO"},
+                    new Alternativa {Correta = false, Descricao = "SILÍCIO"},
+                    new Alternativa {Correta = false, Descricao = "CÁLCIO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 65,
+                Enunciado = "Em que ano aconteceu a Revolução Francesa?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "1789"},
+                    new Alternativa {Correta = false, Descricao = "1776"},
+                    new Alternativa {Correta = false, Descricao = "1812"},
+                    new Alternativa {Correta = false, Descricao = "1804"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 66,
+                Enunciado = "Qual é o nome do processo de divisão celular que resulta em duas células filhas geneticamente idênticas?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "MITOSE"},
+                    new Alternativa {Correta = false, Descricao = "MEIOSE"},
+                    new Alternativa {Correta = false, Descricao = "CITOCINESE"},
+                    new Alternativa {Correta = false, Descricao = "APOPTOSE"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 67,
+                Enunciado = "Quem foi o autor da obra 'O Capital'?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "KARL MARX"},
+                    new Alternativa {Correta = false, Descricao = "MAX WEBER"},
+                    new Alternativa {Correta = false, Descricao = "JOHN LOCKE"},
+                    new Alternativa {Correta = false, Descricao = "ADAM SMITH"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 68,
+                Enunciado = "Qual é a constante de Avogadro, usada para calcular o número de partículas em um mol de substância?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "6,022 x 10^23"},
+                    new Alternativa {Correta = false, Descricao = "3,14 x 10^8"},
+                    new Alternativa {Correta = false, Descricao = "9,81 x 10^9"},
+                    new Alternativa {Correta = false, Descricao = "2,718 x 10^5"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 69,
+                Enunciado = "Qual é o teorema matemático que afirma que 'em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos'?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "TEOREMA DE PITÁGORAS"},
+                    new Alternativa {Correta = false, Descricao = "TEOREMA DE TALES"},
+                    new Alternativa {Correta = false, Descricao = "TEOREMA DE FERMAT"},
+                    new Alternativa {Correta = false, Descricao = "TEOREMA DE GAUSS"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 70,
+                Enunciado = "Qual foi a primeira civilização a desenvolver um sistema de escrita?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "SUMÉRIA"},
+                    new Alternativa {Correta = false, Descricao = "EGÍPCIA"},
+                    new Alternativa {Correta = false, Descricao = "CHINESA"},
+                    new Alternativa {Correta = false, Descricao = "MAIA"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 71,
+                Enunciado = "Quem foi o primeiro ser humano a orbitar a Terra?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "YURI GAGARIN"},
+                    new Alternativa {Correta = false, Descricao = "NEIL ARMSTRONG"},
+                    new Alternativa {Correta = false, Descricao = "ALAN SHEPARD"},
+                    new Alternativa {Correta = false, Descricao = "JOHN GLENN"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 72,
+                Enunciado = "Qual é o maior osso do corpo humano?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "FÊMUR"},
+                    new Alternativa {Correta = false, Descricao = "TÍBIA"},
+                    new Alternativa {Correta = false, Descricao = "RÁDIO"},
+                    new Alternativa {Correta = false, Descricao = "ÚMERO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 73,
+                Enunciado = "Qual é o nome da técnica de construção que utiliza tijolos dispostos em padrão de cruz?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "APARELHAMENTO"},
+                    new Alternativa {Correta = false, Descricao = "ARRANQUE"},
+                    new Alternativa {Correta = false, Descricao = "COLMÉIA"},
+                    new Alternativa {Correta = false, Descricao = "SOBRADO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 74,
+                Enunciado = "Qual é a unidade de medida de força no Sistema Internacional?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "NEWTON"},
+                    new Alternativa {Correta = false, Descricao = "JOULE"},
+                    new Alternativa {Correta = false, Descricao = "PASCAL"},
+                    new Alternativa {Correta = false, Descricao = "WATT"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 75,
+                Enunciado = "Em que ano foi inaugurada a Torre Eiffel?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "1889"},
+                    new Alternativa {Correta = false, Descricao = "1859"},
+                    new Alternativa {Correta = false, Descricao = "1905"},
+                    new Alternativa {Correta = false, Descricao = "1921"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 76,
+                Enunciado = "Qual é o livro mais vendido de todos os tempos, depois da Bíblia?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "DOM QUIXOTE"},
+                    new Alternativa {Correta = false, Descricao = "HARRY POTTER"},
+                    new Alternativa {Correta = false, Descricao = "O SENHOR DOS ANÉIS"},
+                    new Alternativa {Correta = false, Descricao = "O PEQUENO PRÍNCIPE"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 77,
+                Enunciado = "Qual é o gás mais abundante na atmosfera terrestre?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "NITROGÊNIO"},
+                    new Alternativa {Correta = false, Descricao = "OXIGÊNIO"},
+                    new Alternativa {Correta = false, Descricao = "GÁS CARBÔNICO"},
+                    new Alternativa {Correta = false, Descricao = "ARGÔNIO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 78,
+                Enunciado = "Qual é o elemento químico mais leve da tabela periódica?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "HIDROGÊNIO"},
+                    new Alternativa {Correta = false, Descricao = "HÉLIO"},
+                    new Alternativa {Correta = false, Descricao = "LÍTIO"},
+                    new Alternativa {Correta = false, Descricao = "OXIGÊNIO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 79,
+                Enunciado = "Qual é a capital da Islândia?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "REYKJAVÍK"},
+                    new Alternativa {Correta = false, Descricao = "HELSINQUE"},
+                    new Alternativa {Correta = false, Descricao = "STOCKHOLM"},
+                    new Alternativa {Correta = false, Descricao = "OSLO"},
+                }
+            },
+            new Pergunta
+            {
+                Id = 80,
+                Enunciado = "Qual é o único planeta do Sistema Solar que gira no sentido horário?",
+                Alternativas = new()
+                {
+                    new Alternativa {Correta = true, Descricao = "VÊNUS"},
+                    new Alternativa {Correta = false, Descricao = "MARTE"},
+                    new Alternativa {Correta = false, Descricao = "JÚPITER"},
+                    new Alternativa {Correta = false, Descricao = "URANO"},
+                }
+            }
+        };
+
+        public static Pergunta getRamdomPerguntaFacil()
+        {
+            Random r = new Random();
+            
+            int sorteio = r.Next(1, 20);
+
+            return Perguntas_faceis[sorteio];
+        }
+
+        public static Pergunta getRandomPerguntaMedia()
+        {
+            Random r = new Random();
+
+            int sorteio = r.Next(21, 40);
+
+            return Perguntas_medias[sorteio];
+        }
+
+        public static Pergunta getRandomPerguntaDificil()
+        {
+            Random r = new Random();
+
+            int sorteio = r.Next(41, 60);
+
+            return Perguntas_dificeis[sorteio];
+        }
+
+        public static Pergunta getRandomPerguntaFinal()
+        {
+            Random r = new Random();
+
+            int sorteio = r.Next(61, 80);
+
+            return Perguntas_finais[sorteio];
+        }
 
         public App()
         {
